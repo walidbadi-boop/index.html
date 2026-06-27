@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+
+  <!-- Open Graph - تظهر الصورة عند مشاركة الرابط في واتساب وتويتر -->
+  <meta property="og:title" content="كأس العالم 2026 - وليد بادي" />
+  <meta property="og:description" content="نتائج وترتيب المجموعات وتوقعات الأدوار الإقصائية" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://i.ibb.co/N6PD4QK0/file-000000005b407243b56d3a322f98516c.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="كأس العالم 2026 - وليد بادي" />
+  <meta name="twitter:description" content="نتائج وترتيب المجموعات وتوقعات الأدوار الإقصائية" />
+  <meta name="twitter:image" content="https://i.ibb.co/N6PD4QK0/file-000000005b407243b56d3a322f98516c.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>كأس العالم 2026 - وليد بادي</title>
+<style>
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { min-height:100vh; background:linear-gradient(135deg,#0a0f2e 0%,#1a1f4e 50%,#0d1b3e 100%); font-family:'Segoe UI',Arial,sans-serif; direction:rtl; padding:14px 12px 50px; color:#fff; }
+  .owner-name { text-align:center; font-size:13px; color:#aabbdd; margin-bottom:4px; }
+  .owner-name span { color:#ffd700; font-weight:800; font-size:15px; }
+  .header { text-align:center; margin-bottom:12px; }
+  .trophy { font-size:34px; }
+  .title { font-size:20px; font-weight:800; background:linear-gradient(90deg,#ffd700,#ffec6e,#ffd700); -webkit-background-clip:text; -webkit-text-fill-color:transparent; letter-spacing:1px; margin:3px 0 2px; }
+  .subtitle { color:#8899cc; font-size:11px; }
+  .nav-tabs { display:flex; gap:6px; justify-content:center; margin-bottom:14px; }
+  .nav-btn { padding:8px 18px; border-radius:20px; border:none; cursor:pointer; font-size:13px; font-weight:700; background:rgba(255,255,255,0.08); color:#aabbdd; font-family:inherit; transition:all 0.2s; }
+  .nav-btn.active { background:linear-gradient(135deg,#ffd700,#ff8c00); color:#0a0f2e; box-shadow:0 2px 12px rgba(255,215,0,0.35); }
+  .group-selector { display:flex; flex-wrap:wrap; gap:5px; justify-content:center; margin-bottom:12px; }
+  .grp-btn { padding:5px 12px; border-radius:18px; border:none; cursor:pointer; font-size:12px; font-weight:700; background:rgba(255,255,255,0.08); color:#aabbdd; transition:all 0.2s; font-family:inherit; }
+  .grp-btn.active { background:linear-gradient(135deg,#ffd700,#ff8c00); color:#0a0f2e; }
+  .card { max-width:520px; margin:0 auto; background:rgba(255,255,255,0.04); border-radius:16px; border:1px solid rgba(255,255,255,0.1); overflow:hidden; }
+  .card-header { background:linear-gradient(135deg,rgba(255,215,0,0.15),rgba(255,140,0,0.1)); padding:11px 15px; border-bottom:1px solid rgba(255,255,255,0.08); display:flex; align-items:center; justify-content:space-between; }
+  .card-header h2 { font-size:15px; font-weight:700; color:#ffd700; }
+  .tabs { display:flex; gap:5px; }
+  .tab-btn { padding:4px 11px; border-radius:11px; border:none; cursor:pointer; font-size:11px; font-weight:700; background:rgba(255,255,255,0.1); color:#aabbdd; font-family:inherit; transition:all 0.2s; }
+  .tab-btn.active { background:#ffd700; color:#0a0f2e; }
+  .tbl-header { display:grid; grid-template-columns:20px 1fr 30px 30px 30px 30px 40px; gap:3px; padding:7px 13px; font-size:10px; color:#6677aa; font-weight:700; border-bottom:1px solid rgba(255,255,255,0.06); text-align:center; }
+  .tbl-header span:nth-child(2) { text-align:right; }
+  .tbl-row { display:grid; grid-template-columns:20px 1fr 30px 30px 30px 30px 40px; gap:3px; padding:9px 13px; border-bottom:1px solid rgba(255,255,255,0.04); align-items:center; text-align:center; }
+  .tbl-row.qualify { background:rgba(0,200,83,0.05); }
+  .rank-badge { width:19px; height:19px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:9px; font-weight:800; color:#fff; }
+  .team-name { text-align:right; font-size:12px; font-weight:600; color:#e8eeff; }
+  .stat { font-size:11px; color:#8899cc; }
+  .pts-badge { font-size:13px; font-weight:800; color:#ffd700; background:rgba(255,215,0,0.1); border-radius:7px; padding:2px 4px; }
+  .legend { padding:7px 13px; display:flex; gap:12px; font-size:10px; color:#6677aa; flex-wrap:wrap; }
+  .legend span { display:flex; align-items:center; gap:3px; }
+  .dot { width:7px; height:7px; border-radius:50%; display:inline-block; }
+  .matches-list { padding:9px 11px; }
+  .match-played { display:flex; align-items:center; padding:8px 9px; margin-bottom:6px; border-radius:9px; background:rgba(255,255,255,0.06); border:1px solid rgba(255,215,0,0.15); }
+  .team-label { font-size:11px; color:#e8eeff; font-weight:600; flex:1; }
+  .team-label.left { text-align:left; }
+  .score-box-done { padding:3px 8px; margin:0 6px; border-radius:7px; background:rgba(255,215,0,0.15); text-align:center; min-width:54px; }
+  .score-num { font-size:14px; font-weight:800; color:#ffd700; }
+  .match-upcoming { margin-bottom:6px; border-radius:9px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); overflow:hidden; }
+  .match-upcoming-row { display:flex; align-items:center; padding:8px 9px; }
+  .upcoming-score { display:flex; align-items:center; gap:4px; margin:0 6px; min-width:82px; justify-content:center; }
+  .score-input { width:30px; height:30px; border-radius:7px; background:rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.2); color:#ffd700; font-size:15px; font-weight:800; text-align:center; font-family:inherit; outline:none; -moz-appearance:textfield; }
+  .score-input:focus { border-color:#ffd700; background:rgba(255,215,0,0.1); }
+  .score-input::-webkit-outer-spin-button,.score-input::-webkit-inner-spin-button { -webkit-appearance:none; }
+  .score-dash { color:#6677aa; font-size:13px; font-weight:800; }
+  .upcoming-date-label { text-align:center; font-size:9px; color:#556688; padding:0 9px 5px; }
+  .confirm-btn { display:block; width:calc(100% - 18px); margin:0 9px 7px; padding:6px; border-radius:7px; border:none; cursor:pointer; background:linear-gradient(135deg,#ffd700,#ff8c00); color:#0a0f2e; font-size:11px; font-weight:800; font-family:inherit; cursor:pointer; }
+
+  /* دور الـ32 */
+  .ko-section { max-width:520px; margin:0 auto; }
+  .ko-day-title { text-align:center; font-size:12px; font-weight:700; color:#8899cc; margin:12px 0 7px; padding:5px; background:rgba(255,255,255,0.03); border-radius:8px; }
+  .ko-match { background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.09); border-radius:12px; margin-bottom:8px; overflow:hidden; }
+  .ko-header { background:rgba(255,215,0,0.07); padding:5px 12px; font-size:10px; color:#8899cc; display:flex; justify-content:space-between; border-bottom:1px solid rgba(255,255,255,0.06); }
+  .ko-header .winner-tag { color:#ffd700; font-weight:700; }
+  .ko-body { display:flex; align-items:center; padding:10px 12px; }
+  .ko-team { flex:1; }
+  .ko-team-name { font-size:12px; font-weight:700; color:#e8eeff; }
+  .ko-team-name.tbd { color:#556688; font-style:italic; }
+  .ko-team-sub { font-size:10px; color:#6677aa; margin-top:1px; }
+  .ko-center { display:flex; align-items:center; gap:4px; margin:0 8px; justify-content:center; min-width:76px; }
+  .ko-score-done { font-size:15px; font-weight:800; color:#ffd700; background:rgba(255,215,0,0.15); border-radius:8px; padding:3px 10px; }
+  .ko-vs { font-size:11px; color:#334466; font-weight:700; }
+  .ko-input { width:30px; height:30px; border-radius:7px; background:rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.2); color:#ffd700; font-size:15px; font-weight:800; text-align:center; font-family:inherit; outline:none; -moz-appearance:textfield; }
+  .ko-input:focus { border-color:#ffd700; background:rgba(255,215,0,0.1); }
+  .ko-input::-webkit-outer-spin-button,.ko-input::-webkit-inner-spin-button { -webkit-appearance:none; }
+  .ko-confirm { display:block; width:calc(100% - 18px); margin:0 9px 8px; padding:6px; border-radius:7px; border:none; cursor:pointer; background:linear-gradient(135deg,#00c853,#009624); color:#fff; font-size:11px; font-weight:800; font-family:inherit; }
+  .ko-confirm:disabled { background:rgba(255,255,255,0.1); color:#445577; cursor:not-allowed; }
+  .tbd-notice { font-size:10px; color:#445577; text-align:center; padding:5px 12px 8px; font-style:italic; }
+
+  .reset-bar { max-width:520px; margin:10px auto 0; display:flex; justify-content:center; }
+  .reset-btn { padding:6px 18px; border-radius:18px; border:1px solid rgba(255,80,80,0.3); background:rgba(255,50,50,0.08); color:#ff8888; font-size:11px; font-weight:700; cursor:pointer; font-family:inherit; }
+  .save-bar { max-width:520px; margin:5px auto 0; text-align:center; font-size:10px; color:#445577; transition:color 0.3s; }
+  .save-bar.ok { color:#00c853; }
+  .footer { text-align:center; color:#445577; font-size:10px; margin-top:10px; }
+  .toast { position:fixed; bottom:22px; left:50%; transform:translateX(-50%); color:#fff; font-weight:700; font-size:12px; padding:9px 20px; border-radius:18px; opacity:0; pointer-events:none; transition:opacity 0.3s; z-index:999; white-space:nowrap; }
+  .toast.show { opacity:1; }
+  .hidden { display:none; }
+</style>
+</head>
+<body>
+
+<div class="owner-name">إعداد: <span>وليد بادي</span></div>
+<div class="header">
+  <div class="trophy">🏆</div>
+  <h1 class="title">كأس العالم 2026</h1>
+  <p class="subtitle">الولايات المتحدة · كندا · المكسيك</p>
+</div>
+
+<div class="nav-tabs">
+  <button class="nav-btn active" onclick="switchPage('groups')">🗂️ المجموعات</button>
+  <button class="nav-btn" onclick="switchPage('knockout')">⚔️ دور الـ 32</button>
+</div>
+
+<div id="groupsPage">
+  <div class="group-selector" id="groupSelector"></div>
+  <div class="card">
+    <div class="card-header">
+      <h2 id="groupTitle"></h2>
+      <div class="tabs">
+        <button class="tab-btn active" onclick="switchTab('standings')">الترتيب</button>
+        <button class="tab-btn" onclick="switchTab('matches')">المباريات</button>
+      </div>
+    </div>
+    <div id="standingsView"></div>
+    <div id="matchesView" class="hidden"></div>
+  </div>
+</div>
+
+<div id="knockoutPage" class="hidden ko-section"></div>
+
+<div class="reset-bar">
+  <button class="reset-btn" onclick="resetAll()">🗑️ مسح النتائج المدخلة</button>
+</div>
+<div class="save-bar" id="saveBar">💾 يتم الحفظ تلقائياً في متصفحك</div>
+<p class="footer">محدّث حتى 27 يونيو 2026 · أدخل نتائج اليوم وما بعده بنفسك 📝</p>
+<div class="toast" id="toast"></div>
+
+<script>
+const STORAGE_KEY = 'wc2026_walid_v5';
+
+// ============================================================
+// بيانات المجموعات (12 مجموعة)
+// ============================================================
+const G = [
+  { name:"A", teams:["المكسيك 🇲🇽","كوريا الجنوبية 🇰🇷","التشيك 🇨🇿","جنوب أفريقيا 🇿🇦"],
+    matches:[{d:"11/6",t1:0,s1:2,s2:0,t2:3},{d:"11/6",t1:1,s1:2,s2:1,t2:2},{d:"18/6",t1:2,s1:1,s2:1,t2:3},{d:"18/6",t1:0,s1:1,s2:0,t2:1},{d:"24/6",t1:2,s1:0,s2:3,t2:0},{d:"24/6",t1:3,s1:1,s2:0,t2:1}]},
+  { name:"B", teams:["سويسرا 🇨🇭","كندا 🇨🇦","البوسنة والهرسك 🇧🇦","قطر 🇶🇦"],
+    matches:[{d:"12/6",t1:1,s1:1,s2:1,t2:2},{d:"13/6",t1:0,s1:1,s2:1,t2:3},{d:"18/6",t1:0,s1:4,s2:1,t2:2},{d:"18/6",t1:1,s1:6,s2:0,t2:3},{d:"24/6",t1:0,s1:2,s2:1,t2:3},{d:"24/6",t1:2,s1:3,s2:1,t2:1}]},
+  { name:"C", teams:["البرازيل 🇧🇷","المغرب 🇲🇦","اسكتلندا 🏴󠁧󠁢󠁳󠁣󠁴󠁿","هايتي 🇭🇹"],
+    matches:[{d:"13/6",t1:0,s1:1,s2:1,t2:1},{d:"13/6",t1:2,s1:1,s2:0,t2:3},{d:"19/6",t1:2,s1:0,s2:1,t2:1},{d:"19/6",t1:0,s1:3,s2:0,t2:3},{d:"24/6",t1:2,s1:0,s2:3,t2:0},{d:"24/6",t1:1,s1:4,s2:2,t2:3}]},
+  { name:"D", teams:["الولايات المتحدة 🇺🇸","باراغواي 🇵🇾","أستراليا 🇦🇺","تركيا 🇹🇷"],
+    matches:[{d:"12/6",t1:0,s1:4,s2:1,t2:1},{d:"13/6",t1:2,s1:2,s2:0,t2:3},{d:"19/6",t1:0,s1:2,s2:0,t2:2},{d:"19/6",t1:3,s1:0,s2:1,t2:1},{d:"25/6",t1:3,s1:3,s2:2,t2:0},{d:"25/6",t1:1,s1:0,s2:0,t2:2}]},
+  { name:"E", teams:["ألمانيا 🇩🇪","كوت ديفوار 🇨🇮","الإكوادور 🇪🇨","كوراساو 🇨🇼"],
+    matches:[{d:"14/6",t1:0,s1:7,s2:1,t2:3},{d:"14/6",t1:1,s1:1,s2:0,t2:2},{d:"20/6",t1:0,s1:2,s2:1,t2:1},{d:"20/6",t1:2,s1:0,s2:0,t2:3},{d:"25/6",t1:3,s1:0,s2:2,t2:1},{d:"25/6",t1:2,s1:2,s2:1,t2:0}]},
+  { name:"F", teams:["هولندا 🇳🇱","اليابان 🇯🇵","السويد 🇸🇪","تونس 🇹🇳"],
+    matches:[{d:"14/6",t1:0,s1:2,s2:2,t2:1},{d:"14/6",t1:2,s1:5,s2:1,t2:3},{d:"20/6",t1:0,s1:5,s2:1,t2:2},{d:"20/6",t1:1,s1:4,s2:0,t2:3},{d:"25/6",t1:1,s1:1,s2:1,t2:2},{d:"25/6",t1:0,s1:3,s2:1,t2:3}]},
+  { name:"G", teams:["مصر 🇪🇬","بلجيكا 🇧🇪","إيران 🇮🇷","نيوزيلندا 🇳🇿"],
+    matches:[{d:"15/6",t1:1,s1:1,s2:1,t2:0},{d:"15/6",t1:2,s1:2,s2:2,t2:3},{d:"21/6",t1:1,s1:0,s2:0,t2:2},{d:"21/6",t1:0,s1:3,s2:1,t2:3},{d:"26/6",t1:0,s1:1,s2:1,t2:2},{d:"26/6",t1:3,s1:1,s2:5,t2:1}]},
+  { name:"H", teams:["إسبانيا 🇪🇸","أوروغواي 🇺🇾","الرأس الأخضر 🇨🇻","السعودية 🇸🇦"],
+    matches:[{d:"15/6",t1:0,s1:0,s2:0,t2:2},{d:"15/6",t1:3,s1:1,s2:1,t2:1},{d:"21/6",t1:0,s1:4,s2:0,t2:3},{d:"21/6",t1:1,s1:2,s2:2,t2:2},{d:"26/6",t1:2,s1:0,s2:0,t2:3},{d:"26/6",t1:0,s1:1,s2:0,t2:1}]},
+  { name:"I", teams:["فرنسا 🇫🇷","النرويج 🇳🇴","السنغال 🇸🇳","العراق 🇮🇶"],
+    matches:[{d:"16/6",t1:0,s1:3,s2:1,t2:2},{d:"16/6",t1:1,s1:4,s2:1,t2:3},{d:"22/6",t1:0,s1:3,s2:0,t2:3},{d:"22/6",t1:1,s1:3,s2:2,t2:2},{d:"26/6",t1:1,s1:4,s2:1,t2:0},{d:"26/6",t1:2,s1:5,s2:0,t2:3}]},
+  { name:"J", teams:["الأرجنتين 🇦🇷","النمسا 🇦🇹","الجزائر 🇩🇿","الأردن 🇯🇴"],
+    matches:[{d:"16/6",t1:0,s1:3,s2:0,t2:2},{d:"16/6",t1:1,s1:3,s2:1,t2:3},{d:"22/6",t1:0,s1:2,s2:0,t2:1},{d:"22/6",t1:3,s1:1,s2:2,t2:2},{d:"27/6",t1:3,s1:null,s2:null,t2:0},{d:"27/6",t1:2,s1:null,s2:null,t2:1}]},
+  { name:"K", teams:["كولومبيا 🇨🇴","البرتغال 🇵🇹","الكونغو الديمقراطية 🇨🇩","أوزبكستان 🇺🇿"],
+    matches:[{d:"17/6",t1:1,s1:1,s2:1,t2:2},{d:"17/6",t1:3,s1:1,s2:3,t2:0},{d:"23/6",t1:1,s1:5,s2:0,t2:3},{d:"23/6",t1:0,s1:1,s2:0,t2:2},{d:"27/6",t1:0,s1:null,s2:null,t2:1},{d:"27/6",t1:2,s1:null,s2:null,t2:3}]},
+  { name:"L", teams:["إنجلترا 🏴󠁧󠁢󠁥󠁮󠁧󠁿","كرواتيا 🇭🇷","غانا 🇬🇭","بنما 🇵🇦"],
+    matches:[{d:"17/6",t1:0,s1:4,s2:2,t2:1},{d:"17/6",t1:2,s1:1,s2:0,t2:3},{d:"23/6",t1:0,s1:0,s2:0,t2:2},{d:"23/6",t1:3,s1:0,s2:1,t2:1},{d:"27/6",t1:3,s1:null,s2:null,t2:0},{d:"27/6",t1:1,s1:null,s2:null,t2:2}]},
+];
+
+// ============================================================
+// هيكل دور الـ32 — يرتبط بالمجموعات ديناميكياً
+// src: {gi: رقم المجموعة, rank: 0=أول, 1=ثاني, 2=ثالث}
+// ============================================================
+const KO_TEMPLATE = [
+  // 28 يونيو
+  { date:"28 يونيو", label:"A(1) vs B(3)", t1:{gi:0,rank:0}, t2:{gi:1,rank:2} },
+  { date:"28 يونيو", label:"F(1) vs C(2)", t1:{gi:5,rank:0}, t2:{gi:2,rank:1} },
+  { date:"28 يونيو", label:"E(1) vs D(3)", t1:{gi:4,rank:0}, t2:{gi:3,rank:2} },
+  { date:"28 يونيو", label:"C(1) vs F(2)", t1:{gi:2,rank:0}, t2:{gi:5,rank:1} },
+  // 29 يونيو
+  { date:"29 يونيو", label:"A(2) vs B(2)", t1:{gi:0,rank:1}, t2:{gi:1,rank:1} },
+  { date:"29 يونيو", label:"B(1) vs E(3)", t1:{gi:1,rank:0}, t2:{gi:4,rank:2} },
+  { date:"29 يونيو", label:"D(1) vs B(3*)", t1:{gi:3,rank:0}, t2:{gi:1,rank:2} },
+  { date:"29 يونيو", label:"D(2) vs G(2)", t1:{gi:3,rank:1}, t2:{gi:6,rank:1} },
+  // 30 يونيو
+  { date:"30 يونيو", label:"E(2) vs I(2)", t1:{gi:4,rank:1}, t2:{gi:8,rank:1} },
+  { date:"30 يونيو", label:"I(1) vs F(3)", t1:{gi:8,rank:0}, t2:{gi:5,rank:2} },
+  { date:"30 يونيو", label:"H(1) vs J(2)", t1:{gi:7,rank:0}, t2:{gi:9,rank:1} },
+  { date:"30 يونيو", label:"G(1) vs A(3)", t1:{gi:6,rank:0}, t2:{gi:0,rank:2} },
+  // 1 يوليو
+  { date:"1 يوليو",  label:"L(1) vs I(3)", t1:{gi:11,rank:0}, t2:{gi:8,rank:2} },
+  { date:"1 يوليو",  label:"D(1) vs B(3)", t1:{gi:3,rank:0},  t2:{gi:1,rank:2} },
+  { date:"1 يوليو",  label:"G(1) vs A(3)", t1:{gi:6,rank:0},  t2:{gi:0,rank:2} },
+  { date:"1 يوليو",  label:"H(1) vs J(2)", t1:{gi:7,rank:0},  t2:{gi:9,rank:1} },
+  // 2 يوليو
+  { date:"2 يوليو",  label:"H(2) vs J(1)", t1:{gi:7,rank:1},  t2:{gi:9,rank:0} },
+  { date:"2 يوليو",  label:"B(1) vs G(3)", t1:{gi:1,rank:0},  t2:{gi:6,rank:2} },
+  { date:"2 يوليو",  label:"K(2) vs L(2)", t1:{gi:10,rank:1}, t2:{gi:11,rank:1} },
+  // 3 يوليو
+  { date:"3 يوليو",  label:"J(1) vs H(2)", t1:{gi:9,rank:0},  t2:{gi:7,rank:1} },
+  { date:"3 يوليو",  label:"D(2) vs G(2)", t1:{gi:3,rank:1},  t2:{gi:6,rank:1} },
+  { date:"3 يوليو",  label:"K(1) vs L(2)", t1:{gi:10,rank:0}, t2:{gi:11,rank:1} },
+];
+
+// ============================================================
+// حالة التطبيق
+// ============================================================
+let scores, koScores;
+let activeGroup=0, activeTab='standings', activePage='groups';
+
+function initData(){
+  try {
+    const saved=localStorage.getItem(STORAGE_KEY);
+    if(saved){
+      const p=JSON.parse(saved);
+      if(p&&p.scores&&p.scores.length===G.length){
+        showSaveBar('✅ تم تحميل بياناتك المحفوظة',true,2500);
+        return p;
+      }
+    }
+  } catch(e){}
+  return {
+    scores: G.map(g=>g.matches.map(m=>({s1:m.s1,s2:m.s2}))),
+    koScores: KO_TEMPLATE.map(()=>({s1:null,s2:null}))
+  };
+}
+
+function saveData(){
+  try {
+    localStorage.setItem(STORAGE_KEY,JSON.stringify({scores,koScores}));
+    showSaveBar('💾 تم الحفظ تلقائياً ✓',true,2000);
+  } catch(e){ showSaveBar('⚠️ تعذّر الحفظ',false,3000); }
+}
+
+function showSaveBar(msg,ok,dur){
+  const el=document.getElementById('saveBar');
+  if(!el) return;
+  el.textContent=msg; el.className='save-bar'+(ok?' ok':'');
+  setTimeout(()=>{el.textContent='💾 يتم الحفظ تلقائياً في متصفحك';el.className='save-bar';},dur||2000);
+}
+
+// ============================================================
+// حساب ترتيب مجموعة
+// ============================================================
+function calcStandings(gi){
+  const g=G[gi];
+  const st=g.teams.map(()=>({mp:0,w:0,d:0,l:0,gf:0,ga:0,pts:0}));
+  g.matches.forEach((m,mi)=>{
+    const s=scores[gi][mi];
+    if(s.s1===null||s.s2===null) return;
+    const s1=+s.s1,s2=+s.s2;
+    st[m.t1].mp++;st[m.t2].mp++;
+    st[m.t1].gf+=s1;st[m.t1].ga+=s2;
+    st[m.t2].gf+=s2;st[m.t2].ga+=s1;
+    if(s1>s2){st[m.t1].w++;st[m.t1].pts+=3;st[m.t2].l++;}
+    else if(s1<s2){st[m.t2].w++;st[m.t2].pts+=3;st[m.t1].l++;}
+    else{st[m.t1].d++;st[m.t1].pts++;st[m.t2].d++;st[m.t2].pts++;}
+  });
+  return g.teams
+    .map((name,i)=>({name,...st[i]}))
+    .sort((a,b)=>b.pts!==a.pts?b.pts-a.pts:(b.gf-b.ga)!==(a.gf-a.ga)?(b.gf-b.ga)-(a.gf-a.ga):b.gf-a.gf);
+}
+
+// ============================================================
+// دالة مركزية: احصل على اسم الفريق من مصدر ديناميكي
+// ============================================================
+function resolveTeam(src){
+  const sorted=calcStandings(src.gi);
+  const team=sorted[src.rank];
+  if(!team) return null; // مجموعة لم تُحسم بعد
+  return { name:team.name, sub:`${src.rank===0?'1':(src.rank===1?'2':'3')}st ${G[src.gi].name}` };
+}
+
+function isGroupComplete(gi){
+  return scores[gi].every(s=>s.s1!==null&&s.s2!==null);
+}
+
+function rankColor(r,complete){
+  if(r<2) return '#00c853';
+  if(r===2&&!complete) return '#ff6d00';
+  return '#c62828';
+}
+
+// ============================================================
+// Render المجموعات
+// ============================================================
+function renderButtons(){
+  const sel=document.getElementById('groupSelector');
+  sel.innerHTML='';
+  G.forEach((g,i)=>{
+    const btn=document.createElement('button');
+    btn.className='grp-btn'+(i===activeGroup?' active':'');
+    btn.textContent=g.name;
+    btn.onclick=()=>{activeGroup=i;renderGroupContent();};
+    sel.appendChild(btn);
+  });
+}
+
+function renderStandings(){
+  const sorted=calcStandings(activeGroup);
+  const complete=isGroupComplete(activeGroup);
+  let html=`<div class="tbl-header"><span>#</span><span>الفريق</span><span>لع</span><span>ف</span><span>ت</span><span>خ</span><span style="color:#ffd700">نق</span></div>`;
+  sorted.forEach((t,rank)=>{
+    const color=rankColor(rank,complete);
+    html+=`<div class="tbl-row ${rank<2?'qualify':''}">
+      <div class="rank-badge" style="background:${color};display:flex;align-items:center;justify-content:center;">${rank+1}</div>
+      <div class="team-name">${t.name}</div>
+      <div class="stat">${t.mp}</div><div class="stat">${t.w}</div>
+      <div class="stat">${t.d}</div><div class="stat">${t.l}</div>
+      <div class="pts-badge">${t.pts}</div>
+    </div>`;
+  });
+  if(complete){
+    html+=`<div class="legend"><span><span class="dot" style="background:#00c853"></span>متأهل</span><span><span class="dot" style="background:#c62828"></span>خارج</span><span style="color:#445577;font-style:italic;">✓ مكتملة</span></div>`;
+  } else {
+    html+=`<div class="legend"><span><span class="dot" style="background:#00c853"></span>متأهل</span><span><span class="dot" style="background:#ff6d00"></span>محتمل</span><span><span class="dot" style="background:#c62828"></span>خارج</span></div>`;
+  }
+  document.getElementById('standingsView').innerHTML=html;
+}
+
+function renderMatches(){
+  const g=G[activeGroup];
+  let html='<div class="matches-list">';
+  g.matches.forEach((m,mi)=>{
+    const s=scores[activeGroup][mi];
+    const t1n=g.teams[m.t1],t2n=g.teams[m.t2];
+    if(s.s1!==null&&s.s2!==null){
+      html+=`<div class="match-played"><div class="team-label">${t1n}</div><div class="score-box-done"><div class="score-num">${s.s1} - ${s.s2}</div></div><div class="team-label left">${t2n}</div></div>`;
+    } else {
+      html+=`<div class="match-upcoming">
+        <div class="match-upcoming-row">
+          <div class="team-label">${t1n}</div>
+          <div class="upcoming-score">
+            <input class="score-input" type="number" min="0" max="30" id="gs1_${activeGroup}_${mi}" placeholder="0">
+            <span class="score-dash">-</span>
+            <input class="score-input" type="number" min="0" max="30" id="gs2_${activeGroup}_${mi}" placeholder="0">
+          </div>
+          <div class="team-label left">${t2n}</div>
+        </div>
+        <div class="upcoming-date-label">📅 ${m.d}</div>
+        <button class="confirm-btn" onclick="confirmGroupScore(${activeGroup},${mi})">✅ تأكيد وحفظ</button>
+      </div>`;
+    }
+  });
+  html+='</div>';
+  document.getElementById('matchesView').innerHTML=html;
+}
+
+function confirmGroupScore(gi,mi){
+  const v1=document.getElementById(`gs1_${gi}_${mi}`).value;
+  const v2=document.getElementById(`gs2_${gi}_${mi}`).value;
+  if(v1===''||v2===''){showToast('⚠️ أدخل النتيجة أولاً','#ff6d00');return;}
+  scores[gi][mi].s1=parseInt(v1);
+  scores[gi][mi].s2=parseInt(v2);
+  saveData();
+  showToast('✅ تم الحفظ — دور الـ32 يتحدث تلقائياً! 🔄','#00c853');
+  renderGroupContent();
+  // إذا كانت صفحة دور الـ32 مفتوحة، حدّثها أيضاً
+  if(activePage==='knockout') renderKnockout();
+}
+
+function renderGroupContent(){
+  renderButtons();
+  document.getElementById('groupTitle').textContent='المجموعة '+G[activeGroup].name;
+  renderStandings();
+  renderMatches();
+  switchTab(activeTab);
+}
+
+function switchTab(tab){
+  activeTab=tab;
+  document.querySelectorAll('.tab-btn').forEach((b,i)=>{
+    b.className='tab-btn'+((i===0&&tab==='standings')||(i===1&&tab==='matches')?' active':'');
+  });
+  document.getElementById('standingsView').className=tab==='standings'?'':'hidden';
+  document.getElementById('matchesView').className=tab==='matches'?'':'hidden';
+}
+
+// ============================================================
+// Render دور الـ32 — ديناميكي بالكامل
+// ============================================================
+function renderKnockout(){
+  const page=document.getElementById('knockoutPage');
+  let html='';
+  let lastDate='';
+
+  KO_TEMPLATE.forEach((m,i)=>{
+    // احسب اسم الفريق ديناميكياً من الترتيب الحالي
+    const team1=resolveTeam(m.t1);
+    const team2=resolveTeam(m.t2);
+    const t1name = team1 ? team1.name : '?';
+    const t1sub  = team1 ? team1.sub  : `مرتقب (${G[m.t1.gi].name})`;
+    const t2name = team2 ? team2.name : '?';
+    const t2sub  = team2 ? team2.sub  : `مرتقب (${G[m.t2.gi].name})`;
+    const tbd    = !team1 || !team2;
+
+    if(m.date!==lastDate){
+      lastDate=m.date;
+      html+=`<div class="ko-day-title">📅 ${m.date}</div>`;
+    }
+
+    const s=koScores[i];
+    const played=s.s1!==null&&s.s2!==null;
+    let winnerName='';
+    if(played){
+      const s1=+s.s1,s2=+s.s2;
+      if(s1>s2) winnerName=t1name;
+      else if(s2>s1) winnerName=t2name;
+      else winnerName='تعادل (يكمل بأوقات إضافية)';
+    }
+
+    html+=`<div class="ko-match">
+      <div class="ko-header">
+        <span style="color:#556688">${m.label}</span>
+        ${played?`<span class="winner-tag">🏆 ${winnerName}</span>`:''}
+      </div>
+      <div class="ko-body">
+        <div class="ko-team">
+          <div class="ko-team-name ${!team1?'tbd':''}">${t1name}</div>
+          <div class="ko-team-sub">${t1sub}</div>
+        </div>
+        <div class="ko-center">
+          ${played
+            ?`<div class="ko-score-done">${s.s1} - ${s.s2}</div>`
+            :`<input class="ko-input" type="number" min="0" max="30" id="ko1_${i}" placeholder="0" ${tbd?'disabled':''}>
+              <span class="score-dash">-</span>
+              <input class="ko-input" type="number" min="0" max="30" id="ko2_${i}" placeholder="0" ${tbd?'disabled':''}>`
+          }
+        </div>
+        <div class="ko-team" style="text-align:left">
+          <div class="ko-team-name ${!team2?'tbd':''}">${t2name}</div>
+          <div class="ko-team-sub">${t2sub}</div>
+        </div>
+      </div>
+      ${!played
+        ?(tbd
+          ?`<div class="tbd-notice">⏳ تنتظر اكتمال نتائج المجموعات</div>`
+          :`<button class="ko-confirm" onclick="confirmKO(${i})">✅ تأكيد النتيجة وحفظها</button>`
+        ):''
+      }
+    </div>`;
+  });
+
+  page.innerHTML=html;
+}
+
+function confirmKO(i){
+  const v1=document.getElementById(`ko1_${i}`).value;
+  const v2=document.getElementById(`ko2_${i}`).value;
+  if(v1===''||v2===''){showToast('⚠️ أدخل النتيجة أولاً','#ff6d00');return;}
+  koScores[i]={s1:parseInt(v1),s2:parseInt(v2)};
+  saveData();
+  showToast('✅ تم الحفظ!','#00c853');
+  renderKnockout();
+}
+
+// ============================================================
+// التنقل
+// ============================================================
+function switchPage(page){
+  activePage=page;
+  document.querySelectorAll('.nav-btn').forEach((b,i)=>{
+    b.className='nav-btn'+((i===0&&page==='groups')||(i===1&&page==='knockout')?' active':'');
+  });
+  document.getElementById('groupsPage').className=page==='groups'?'':'hidden';
+  document.getElementById('knockoutPage').className=page==='knockout'?'ko-section':'hidden';
+  if(page==='knockout') renderKnockout();
+}
+
+function resetAll(){
+  if(!confirm('مسح جميع النتائج المدخلة يدوياً؟\nستعود البيانات الرسمية فقط.')) return;
+  scores=G.map(g=>g.matches.map(m=>({s1:m.s1,s2:m.s2})));
+  koScores=KO_TEMPLATE.map(()=>({s1:null,s2:null}));
+  localStorage.removeItem(STORAGE_KEY);
+  showToast('🗑️ تم المسح','#ff6d00');
+  renderGroupContent();
+  if(activePage==='knockout') renderKnockout();
+}
+
+function showToast(msg,color='#00c853'){
+  const t=document.getElementById('toast');
+  t.textContent=msg; t.style.background=color;
+  t.classList.add('show');
+  setTimeout(()=>t.classList.remove('show'),2800);
+}
+
+// ============================================================
+// تشغيل
+// ============================================================
+const data=initData();
+scores=data.scores;
+koScores=data.koScores;
+renderGroupContent();
+</script>
+</body>
+</html>
